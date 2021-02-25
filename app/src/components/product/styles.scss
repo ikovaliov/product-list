@@ -1,0 +1,20 @@
+.product-list--card {   
+    .MuiPaper-root {
+        padding: 15px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .product-list--card-body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+}

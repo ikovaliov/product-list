@@ -1,0 +1,25 @@
+.product-list {
+    .MuiFormControl-root {
+        min-width: 120px;
+        margin-bottom: 30px;
+    }
+    .product-list--cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.product-list--pages {
+    nav {
+        display: flex;
+        max-width: 400px;
+        justify-content: center;
+        margin: 50px auto;
+        align-items: center;
+
+        li {
+            margin-bottom: 10px;
+        }
+    }
+}

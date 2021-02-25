@@ -1,0 +1,24 @@
+.home-page {
+    min-height: 500px;
+
+    .MuiFab-root {
+        &:hover {
+            background: #5e5e5e;
+        }
+    }
+    .MuiButtonBase-root {
+        margin: 100px auto;
+        display: flex;
+        max-width: 225px;
+        justify-content: center;
+        padding: inherit;
+        background: black;
+        color: white;
+        height: 60px;
+        font-size: 20px;
+
+        .MuiSvgIcon-root {
+            margin-left: 10px;
+        }
+    }
+}

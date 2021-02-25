@@ -1,0 +1,36 @@
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 10px 0;    
+    
+    .MuiToolbar-root {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header--logo {
+        font-weight: 600;
+        color: black;
+        text-align: left;
+        text-decoration: none;
+    }
+
+    .header--menu-btn {
+        font-weight: 700;
+        size: 18px;
+        margin-left: 38px;
+        color: black;
+    }
+
+    button.MuiButtonBase-root {
+        color: black;
+    }
+}
+
+.MuiPaper-root {
+    padding: 20px 30px;
+
+    a {
+        color: black;
+    }
+}
