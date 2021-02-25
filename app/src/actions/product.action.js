@@ -23,9 +23,8 @@ export const fetchProducts = (currentPage, perPage, sortByPrice) => {
       .then((response) => {
         const products = response.data;
         setTimeout(() => {
-             dispatch(fetchProductsSuccess(products));
-        }, 800)
-     
+          dispatch(fetchProductsSuccess(products));
+        }, 800);
       })
       .catch((error) => {
         dispatch(fetchProductsFailure(error));

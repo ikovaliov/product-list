@@ -33,7 +33,6 @@
         "lint": "eslint './src/**/*.{js,jsx}'",
         "lint:fix": "eslint './src/**/*.{js,jsx}' --fix",
         "format": "prettier \"src/**/*.{js,html}\" --write",
-        "dev": "webpack serve --hot webpack.config.js",
         "build": "webpack --mode production"
     },
     "husky": {

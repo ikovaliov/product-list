@@ -1,6 +1,6 @@
 FROM node:12
 
-WORKDIR /app
+WORKDIR /usr/src/app
 
 COPY ./package.json .
 COPY ./yarn.lock .
@@ -9,5 +9,5 @@ RUN yarn
 
 COPY . .
 
-CMD [ "yarn", "build" ]
+CMD [ "yarn", "start" ]
 

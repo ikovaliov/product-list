@@ -1,21 +1,31 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
   Card,
-  CardActionArea,
   CardContent,
   CardMedia,
   Typography,
   Grid,
-  Avatar, IconButton, CardHeader, CardActions, Button
+  IconButton,
+  CardHeader,
+  CardActions,
+  Button,
 } from '@material-ui/core';
-import ShareIcon from "@material-ui/icons/Share";
+import ShareIcon from '@material-ui/icons/Share';
 import './styles.scss';
 
 export default function ProductComponent({ item }) {
   const price = parseFloat(item.price).toFixed(2);
 
   return (
-    <Grid item item xs={12} sm={6} md={4} lg={3} className="product-list--card" style={{ marginBottom: "30px" }}>
+    <Grid
+      item
+      xs={12}
+      sm={6}
+      md={4}
+      lg={3}
+      className="product-list--card"
+      style={{ marginBottom: '30px' }}
+    >
       <Card>
         <CardHeader
           action={
@@ -28,7 +38,10 @@ export default function ProductComponent({ item }) {
         />
 
         <div className="product-list--card-body">
-          <CardMedia style={{ height: "200px", backgroundSize: "contain" }} image={item.image} />
+          <CardMedia
+            style={{ height: '200px', backgroundSize: 'contain' }}
+            image={item.image}
+          />
           <CardContent>
             <Typography variant="body2" component="p">
               $ {price}
@@ -38,7 +51,7 @@ export default function ProductComponent({ item }) {
             <Button size="small">BUY NOW</Button>
             <Button size="small">OFFER</Button>
           </CardActions>
-        </div>  
+        </div>
       </Card>
     </Grid>
   );
